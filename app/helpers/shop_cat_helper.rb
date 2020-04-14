@@ -1,0 +1,2 @@
+module ShopCatHelper
+end

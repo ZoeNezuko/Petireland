@@ -1,0 +1,52 @@
+<header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <%= link_to 'Petlreland', home_index_url, class: 'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to 'Dog', shop_dog_index_url, class: 'nav-link' %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to 'Cat', shop_cat_index_url, class: 'nav-link' %>
+        </li>
+      </ul>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item active">
+          <%= link_to 'Sign in', login_url, class: 'nav-link' %>
+        </li>
+
+        <!--if login display account-->
+        <% if session[:user_id] %>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href=" " role="button" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+          <div class="dropdown-menu">
+            <%= link_to 'My Account', users_path, class: 'dropdown-item' %>
+            <%= link_to 'Sign out', logout_path, method: :delete, class: 'dropdown-item' %>
+          </div>
+        </li>
+        <% end %>
+
+      </ul>
+
+      <!--Search-->
+      <%= form_tag(search_page_path, :method => "get", class: 'form-inline my-2 my-lg-0 navbar-left') do %>
+        <div class="input-group">
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: 'form-control' %>
+        </div>
+        &nbsp&nbsp
+        <%= button_tag 'Search', :class => 'btn btn-outline-success my-2 my-sm-0', :name => nil %>
+      <% end %>
+
+      <br>
+      <br>
+
+    </div>
+  </nav>
+</header>

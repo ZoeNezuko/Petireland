@@ -1,0 +1,61 @@
+<%= form_with(model: @user, local: true) do |form| %>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <div class="container">
+            <p>Signed in as </p>
+            <span>username: </span><%= @user.name %>
+          </div>
+          <br>
+
+        </div>
+      </nav>
+
+      <div class="col-lg-3">
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <br>
+        <h1>Editing your account</h1>
+        <hr>
+        <br>
+
+        <div class="field">
+          <%= form.label :name, 'Change name' %><br>
+          <%= form.text_field :name, size: 50 %>
+        </div>
+        <br>
+
+        <div class="field">
+          <%= form.label :password, 'change password' %><br>
+          <%= form.password_field :password, size: 50 %>
+        </div>
+        <br>
+
+        <div class="field">
+          <%= form.label :password_confirmation, 'Confirm password' %><br>
+          <%= form.password_field :password_confirmation, id: :user_password_confirmation, size: 50 %>
+        </div>
+        <br>
+        <br>
+
+        <div class="actions">
+          <%= form.submit 'Update account',class: 'btn btn-primary btn-lg' %>
+        </div>
+        <br>
+
+        <% end %>
+
+        <br>
+        <%= link_to 'Back', users_path, class: 'btn btn-secondary btn-lg' %>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <%= link_to 'Delete your account', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-lg' %>
+        <br><br><br>
+        </div>
+    </div>
+  </div>

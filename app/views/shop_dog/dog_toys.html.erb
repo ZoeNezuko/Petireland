@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Dog Food', shop_dog_dog_food_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Toys', shop_dog_dog_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Beds', shop_dog_dog_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'dog-toys-banner_2.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('fun_timer_strategy_game.jpg', class: "img"), controller: 'products', action: 'show', id: 10 %>
+            <div class="card-body">
+              <p class="card-text">Fun Timer Strategy Game</p>
+              <h5>$47.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Agility-Weave-Poles-12-115cm-High-3.jpg', class: "img"), controller: 'products', action: 'show', id: 11 %>
+            <div class="card-body">
+              <p class="card-text">Agility Weave Poles 12 115cm High</p>
+              <h5>$49.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('agility-ring-2.jpg', class: "img"), controller: 'products', action: 'show', id: 12 %>
+            <div class="card-body">
+              <p class="card-text">Activity Agility Ring</p>
+              <h5>$27.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('tonka-vp6483-megatreadropetugyellowblack-15in-3f-international.jpg', class: "img"), controller: 'products', action: 'show', id: 13 %>
+            <div class="card-body">
+              <p class="card-text">Tonka - Chew Tug Rings Dog Toy</p>
+              <h5>$19.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('dog-force-grip-ball.jpg', class: "img"), controller: 'products', action: 'show', id: 14 %>
+            <div class="card-body">
+              <p class="card-text">Nerf Dog Force Grip Ball 6</p>
+              <h5>$14.30</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Meaty_beef_takeaway_steak_large.jpg', class: "img"), controller: 'products', action: 'show', id: 15 %>
+            <div class="card-body">
+              <p class="card-text">Meaty Tough Toys Steak Takeaway Bone Large</p>
+              <h5>$10.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Nerf Dog TPR Tennis Balls 2pk For Small Dogs And Puppies.png', class: "img"), controller: 'products', action: 'show', id: 16 %>
+            <div class="card-body">
+              <p class="card-text">Nerf Dog TPR Tennis Balls 2pk For Small Dogs And Puppies</p>
+              <h5>$8.90</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Nerf_Teether_Football.jpg', class: "img"), controller: 'products', action: 'show', id: 17 %>
+            <div class="card-body">
+              <p class="card-text">Nerf Dog Teether Football</p>
+              <h5>$5.50</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('vinyl-dumbbell-bone.jpg', class: "img"), controller: 'products', action: 'show', id: 18 %>
+            <div class="card-body">
+              <p class="card-text">Vinyl Dumbbell Bone</p>
+              <h5>$2.50</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

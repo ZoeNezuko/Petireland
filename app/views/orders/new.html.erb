@@ -1,0 +1,28 @@
+<!--h1>New Order</h1-->
+
+<!--%= render 'form', order: @order %-->
+
+<!--%= link_to 'Back', orders_path %-->
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-9">
+      <br>
+      <h1>Please Enter Your Details</h1>
+      <%= render 'form', order: @order %>
+    </div>
+
+    <div class="col-lg-3">
+      <% if @cart %>
+        <div id="cart" class="carts">
+          <%= render @cart %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+
+<%= javascript_pack_tag("pay_type") %>
+
+

@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<% @products.each do |product| %>
+
+<!-- Page Content -->
+  <h1 id="result">Search Result</h1>
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-3">
+      <div class="card">
+        <%= image_tag(product.image_url, class: 'img') %>
+      </div>
+    </div>
+
+    <!-- /.col-lg-4 -->
+
+    <div class="col-lg-6">
+
+      <div class="card mt-4">
+        <div class="card-body">
+          <h3 class="card-title"><%= product.title %></h3>
+          <p class="card-text"><%= product.description %></p>
+          <br>
+          <h5><%= number_to_currency(product.price) %></h5>
+          <br>
+          <%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true, class: "btn btn-primary"%>
+          <br><br>
+          <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+
+        </div>
+      </div>
+      <!-- /.card -->
+
+    </div>
+    <!-- /.col-lg-6 -->
+
+
+    <div class="col-lg-3">
+      <% if @cart %>
+        <div id="cart">
+          <%= render @cart %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+  <!--row-->
+
+  <br><br><br><br><br><br><br>
+  <%= link_to 'Back', home_index_url, class: 'btn btn-secondary btn-lg btn-block' %>
+  <br><br><br>
+
+</div>
+<!-- /.container -->
+<% end %>

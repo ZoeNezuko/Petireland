@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Cat Food', shop_cat_cat_food_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Toys', shop_cat_cat_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Beds', shop_cat_cat_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active ">
+            <%= image_tag 'cat-food-banner_2.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-british-shorthair-adult.jpg', class: "img"), controller: 'products', action: 'show', id: 28 %>
+            <div class="card-body">
+              <p class="card-text">Royal Canin British Shorthair</p>
+              <h5>$28.35</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('sheba-fine-flakes-in-jelly-fish.jpg', class: "img"), controller: 'products', action: 'show', id: 29 %>
+            <div class="card-body">
+              <p class="card-text">Sheba Fine Flakes In Jelly - Fish</p>
+              <h5>$19.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-baby-cat-milk.jpg', class: "img"), controller: 'products', action: 'show', id: 30 %>
+            <div class="card-body">
+              <p class="card-text">Royal Canin Babycat Milk</p>
+              <h5>$16.30</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('natures-menu-cat-pouches-multipack-100g.jpg', class: "img"), controller: 'products', action: 'show', id: 31 %>
+            <div class="card-body">
+              <p class="card-text">Natures Menu Cat Pouch MultiPack 100g</p>
+              <h5>$12.50</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Burgess-SupaCat-Kitten-1.5kg.jpg', class: "img"), controller: 'products', action: 'show', id: 32 %>
+            <div class="card-body">
+              <p class="card-text">Burgess SupaCat Kitten 1.5kg</p>
+              <h5>$7.90</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Whiskas_Meat_Selection.png', class: "img"), controller: 'products', action: 'show', id: 33 %>
+            <div class="card-body">
+              <p class="card-text">Whiskas Meat Selection In Jelly 12 X 100g</p>
+              <h5>$5.87</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('nuevo-cat-chicken-fillet-with-shrimps.jpg', class: "img"), controller: 'products', action: 'show', id: 34 %>
+            <div class="card-body">
+              <p class="card-text">Nuevo Cat Chicken Fillet With Shrimps 85g</p>
+              <h5>$1.20</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('mac_duck_turkey_chicken.jpg', class: "img"), controller: 'products', action: 'show', id: 35 %>
+            <div class="card-body">
+              <p class="card-text">Mac's Cat Gourmet Foil Pack - Duck, Turkey & Chicken</p>
+              <h5>$1.20</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('gourmet-gold-85g.jpg', class: "img"), controller: 'products', action: 'show', id: 36 %>
+            <div class="card-body">
+              <p class="card-text">Gourmet Gold 85g</p>
+              <h5>$0.89</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

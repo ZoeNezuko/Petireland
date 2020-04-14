@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Cat Food', shop_cat_cat_food_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Toys', shop_cat_cat_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Beds', shop_cat_cat_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active ">
+            <%= image_tag 'cat-beds-banner.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('solid-wood-cat-sleeper-caves.jpg', class: "img"), controller: 'products', action: 'show', id: 46 %>
+            <div class="card-body">
+              <p class="card-text">Solid Wood Cat Sleeper Caves</p>
+              <h5>$160.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('wicker-cave-with-bed.jpg', class: "img"), controller: 'products', action: 'show', id: 47 %>
+            <div class="card-body">
+              <p class="card-text">Wicker Cave With Bed</p>
+              <h5>$59.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('lotte-bed-small.jpg', class: "img"), controller: 'products', action: 'show', id: 48 %>
+            <div class="card-body">
+              <p class="card-text">Lotte Bed For Cats</p>
+              <h5>$39.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('silaaa.jpg', class: "img"), controller: 'products', action: 'show', id: 49 %>
+            <div class="card-body">
+              <p class="card-text">Silas Cuddly Cave </p>
+              <h5>$34.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('chenille-sofa-bed_2.jpg', class: "img"), controller: 'products', action: 'show', id: 50 %>
+            <div class="card-body">
+              <p class="card-text">Petstop Sofa Bed Chenille Aqua</p>
+              <h5>$28.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Petstar Mink Hooded Bed Brown.png', class: "img"), controller: 'products', action: 'show', id: 51 %>
+            <div class="card-body">
+              <p class="card-text">Petstar Mink Hooded Bed Brown</p>
+              <h5>$25.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Kaline Cuddly Cave.jpg', class: "img"), controller: 'products', action: 'show', id: 52 %>
+            <div class="card-body">
+              <p class="card-text">Kaline Cuddly Cave</p>
+              <h5>$24.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('radiator-bed-brown.jpg', class: "img"), controller: 'products', action: 'show', id: 53 %>
+            <div class="card-body">
+              <p class="card-text">Radiator Bed Brown</p>
+              <h5>$18.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('patchwork-blanket-for-cats.jpg', class: "img"), controller: 'products', action: 'show', id: 54 %>
+            <div class="card-body">
+              <p class="card-text">Patchwork Blanket For Cats</p>
+              <h5>$13.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

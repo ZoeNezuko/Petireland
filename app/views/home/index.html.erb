@@ -1,0 +1,133 @@
+<h4 id="notice"><%= notice %></h4>
+<div class="container">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag 'petshop.jpg', class: 'img' %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'petshop.jpg', class: 'img' %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'petshop.jpg', class: 'img' %>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <h1 class="text-center my-5 font-weight-bold">SHOP NOW<hr></h1>
+
+  <!--Grid row-->
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-12">
+
+      <!--Image-->
+      <div class="card h-100 hover-shadow">
+        <%= link_to image_tag('dog.jpg',class: 'img'), controller: 'shop_dog' %>
+        <div class="card-body">
+          <div class="card-title">
+            <h4>Shop Now</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-12">
+
+      <!--Image-->
+      <div class="card h-100 hover-shadow">
+        <%= link_to image_tag('cat.jpg', class: 'img'), controller: 'shop_cat' %>
+        <div class="card-body">
+          <div class="card-title">
+            <h4>Shop Now</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+  <h1 class="text-center my-5 font-weight-bold">MONTHLY SPECIAL<hr></h1>
+
+  <!--Card-->
+  <div class="card-deck">
+
+    <div class="card hover-shadow">
+      <%= link_to image_tag('gourmet-gold-85g.jpg', class: "img"), controller: 'products', action: 'show', id: 36 %>
+      <div class="card-body">
+        <h5 class="card-title">Gourmet Gold 85g</h5>
+      </div>
+    </div>
+
+    <div class="card hover-shadow">
+      <%= link_to image_tag('dog-force-grip-ball.jpg', class: "img"), controller: 'products', action: 'show', id: 14 %>
+      <div class="card-body">
+        <h5 class="card-title">Petstop Sofa Bed Chenille Aqua</h5>
+      </div>
+    </div>
+
+    <div class="card hover-shadow">
+      <%= link_to image_tag('go_native_chicken.png', class: "img"), controller: 'products', action: 'show', id: 5 %>
+      <div class="card-body">
+        <h5 class="card-title">Red Mills - Go Native - Chicken</h5>
+      </div>
+    </div>
+
+  </div>
+  <!--Card-->
+
+  <h1 class="text-center my-5 font-weight-bold">ABOUT US<hr></h1>
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-12">
+      <p>We are a chain of pet stores in Ireland, stocking a range of pet food brands,
+        supplies, accessories and so much more to fit all of your pet care requirements.
+        With three large pet superstores in Dublin (Blanchardstown, Swords & Carrickmines),
+        one in Naas, Co. Kildare, one in Cork, one in Tralee, Kerry and our newest one in Limerick.
+        We are dedicated to providing you with the best products and services for your pet.
+      </p>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+      <p>We are passionate about pets, stocking over 7,000 products for all kinds of pets online,
+        at great prices with fast and convenient delivery all over Ireland. At Pet Stop you will
+        find a great range of products for all kinds of pets, from small pets including hamsters,
+        rabbits and gerbils, to dogs, cats, reptiles, birds, wild birds, fish and more. Our friendly,
+        qualified staff are on hand to offer health advice, and products to keep your pet healthy
+        and happy.
+      </p>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+      <p>Whether you are looking for specific dog food, cat food, or toy and accessory to keep
+        your pet healthy and happy, we stock everything you need so you can kit your home,
+        garden and even car out; from collars, toys and treats to kennels, cages,
+        leads and so much more, Petstop is your one stop shop for all your pet care needs.
+        We are always here to help.
+      </p>
+    </div>
+
+  </div>
+  <br>
+
+</div>

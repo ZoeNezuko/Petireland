@@ -1,0 +1,118 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Cat Food', shop_cat_cat_food_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Toys', shop_cat_cat_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Beds', shop_cat_cat_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'cat-products-banner.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-british-shorthair-adult.jpg', class: "img"), controller: 'products', action: 'show', id: 28 %>
+            <div class="card-body">
+              <p class="card-text">Agility Weave Poles 12 115cm High</p>
+              <h5>$49.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('trixie-cats-fishing-2.jpg', class: "img"), controller: 'products', action: 'show', id: 38 %>
+            <div class="card-body">
+              <p class="card-text">Trixie Cats Fishing</p>
+              <h5>$27.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('wicker-cave-with-bed.jpg', class: "img"), controller: 'products', action: 'show', id: 47 %>
+            <div class="card-body">
+              <p class="card-text">Wicker Cave With Bed</p>
+              <h5>$59.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('natures-menu-cat-pouches-multipack-100g.jpg', class: "img"), controller: 'products', action: 'show', id: 31 %>
+            <div class="card-body">
+              <p class="card-text">Natures Menu Cat Pouch MultiPack 100g</p>
+              <h5>$12.50</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('set-of-luffa-toys-on-springs-sisal.jpg', class: "img"), controller: 'products', action: 'show', id: 41 %>
+            <div class="card-body">
+              <p class="card-text">Set Of Luffa Toys On Springs, Sisal</p>
+              <h5>$10.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('chenille-sofa-bed_2.jpg', class: "img"), controller: 'products', action: 'show', id: 50 %>
+            <div class="card-body">
+              <p class="card-text">Petstop Sofa Bed Chenille Aqua</p>
+              <h5>$28.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

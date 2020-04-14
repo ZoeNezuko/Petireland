@@ -1,0 +1,2 @@
+module ShopDogHelper
+end

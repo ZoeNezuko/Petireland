@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <h4 id="notice"><%= notice %></h4>
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <div class="container">
+          <p>Signed in as </p>
+
+          <% @users.find do |users| %>
+            <span>username: </span><%= users.name%>
+          <% end %>
+
+          <br><br>
+          <p>You have <%= pluralize(@total_orders, "orders") %></p>
+
+        </div>
+
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <%= link_to 'orders', orders_url, class: 'nav-link' %>
+          </li>
+
+          <% @users.find do |user| %>
+          <li class="nav-item">
+            <%= link_to 'settings', edit_user_path(user), class: 'nav-link' %>
+          </li>
+          <% end %>
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+      <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 id="Wel">Welcome</h1>
+
+      </div>
+
+      <h3 id="PH">Purchase history</h3>
+      <br>
+
+      <% if @order %>
+        <div id="order">
+          <%= render @order %>
+        </div>
+      <% end %>
+
+    </main>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+

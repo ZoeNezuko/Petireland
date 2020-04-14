@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Cat Food', shop_cat_cat_food_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Toys', shop_cat_cat_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Cat Beds', shop_cat_cat_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active ">
+            <%= image_tag 'cat-toys-banner_2.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('strategy-game-playground-for-cats.jpg', class: "img"), controller: 'products', action: 'show', id: 37 %>
+            <div class="card-body">
+              <p class="card-text">Strategy Game Playground For Cats</p>
+              <h5>$37.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('trixie-cats-fishing-2.jpg', class: "img"), controller: 'products', action: 'show', id: 38 %>
+            <div class="card-body">
+              <p class="card-text">Trixie Cats Fishing</p>
+              <h5>$27.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('catit-design-senses-scratch-pad.jpg', class: "img"), controller: 'products', action: 'show', id: 39 %>
+            <div class="card-body">
+              <p class="card-text">Catit Design Senses Scratch Pad</p>
+              <h5>$19.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('board1_1.jpg', class: "img"), controller: 'products', action: 'show', id: 40 %>
+            <div class="card-body">
+              <p class="card-text">Catit Play Pirates Barrel Scratcher With Catnip</p>
+              <h5>$14.60</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('set-of-luffa-toys-on-springs-sisal.jpg', class: "img"), controller: 'products', action: 'show', id: 41 %>
+            <div class="card-body">
+              <p class="card-text">Set Of Luffa Toys On Springs, Sisal</p>
+              <h5>$10.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('catch-the-light-plastic-mouse.jpg', class: "img"), controller: 'products', action: 'show', id: 42 %>
+            <div class="card-body">
+              <p class="card-text">Catch The Light - Laser Cat Toy</p>
+              <h5>$7.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('jolly-moggy-woven-wonders-catnip-multi-rings.jpg', class: "img"), controller: 'products', action: 'show', id: 43 %>
+            <div class="card-body">
+              <p class="card-text">Jolly Moggy Woven Wonders Catnip Multi Rings</p>
+              <h5>$4.25</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('plastic-balls-with-bell-set-4pk.jpg', class: "img"), controller: 'products', action: 'show', id: 44 %>
+            <div class="card-body">
+              <p class="card-text">Plastic Balls With Bell Set 4Pk</p>
+              <h5>$2.25</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('catit-cat-eco-terra-toys-with-catnip-loofah-ball.jpg', class: "img"), controller: 'products', action: 'show', id: 45 %>
+            <div class="card-body">
+              <p class="card-text">Catit Cat Eco Terra Toys With Catnip, Loofah Ball</p>
+              <h5>$1.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

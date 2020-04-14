@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Dog Food', shop_dog_dog_food_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Toys', shop_dog_dog_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Beds', shop_dog_dog_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'dog-beds-banner_1.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Home Kennel - Small.jpg', class: "img"), controller: 'products', action: 'show', id: 19 %>
+            <div class="card-body">
+              <p class="card-text">Home Kennel - Small</p>
+              <h5>$89.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('vital-bed-bendson-with-dog_1.jpg', class: "img"), controller: 'products', action: 'show', id: 20 %>
+            <div class="card-body">
+              <p class="card-text">Vital Bed Bendson Grey</p>
+              <h5>$64.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Earthbound Classic Tweed Beige Check Bed.jpg', class: "img"), controller: 'products', action: 'show', id: 21 %>
+            <div class="card-body">
+              <p class="card-text">Earthbound Classic Tweed Beige Check Bed</p>
+              <h5>$52.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('Earthbound Classic Morland Bed Pink.png', class: "img"), controller: 'products', action: 'show', id: 22 %>
+            <div class="card-body">
+              <p class="card-text">Earthbound Classic Morland Bed Pink</p>
+              <h5>$45.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('basket2.jpg', class: "img"), controller: 'products', action: 'show', id: 23 %>
+            <div class="card-body">
+              <p class="card-text">Nabou Basket</p>
+              <h5>$39.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('brown-bed_2.jpg', class: "img"), controller: 'products', action: 'show', id: 24 %>
+            <div class="card-body">
+              <p class="card-text">Petstop Sofa Bed Plaid Brown</p>
+              <h5>$31.90</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('plush_bed_grey.jpg', class: "img"), controller: 'products', action: 'show', id: 25 %>
+            <div class="card-body">
+              <p class="card-text">Petstar Canvas Dog Bed Grey</p>
+              <h5>$24.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('anton_cuddly_cave.jpg', class: "img"), controller: 'products', action: 'show', id: 26 %>
+            <div class="card-body">
+              <p class="card-text">Anton Cuddly Cave</p>
+              <h5>$15.99</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('kenny-blanket.jpg', class: "img"), controller: 'products', action: 'show', id: 27 %>
+            <div class="card-body">
+              <p class="card-text">Kenny Blanket</p>
+              <h5>$7.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

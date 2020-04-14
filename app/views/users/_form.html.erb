@@ -1,0 +1,60 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container">
+    <br>
+    <h1 id="COA">Create Online Account</h1>
+    <hr>
+    <div class="row">
+      <div class="col-lg-4">
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <br>
+        <h2>Enter Your Details</h2>
+        <br>
+
+        <div class="field">
+          <%= form.label :name, 'Name' %><br>
+          <%= form.text_field :name, size: 50 %>
+        </div>
+        <br>
+
+        <div class="field">
+          <%= form.label :password, 'Password' %><br>
+          <%= form.password_field :password, size: 50 %>
+        </div>
+        <br>
+
+        <div class="field">
+          <%= form.label :password_confirmation, 'Confirm password' %><br>
+          <%= form.password_field :password_confirmation, id: :user_password_confirmation, size: 50 %>
+        </div>
+        <br>
+        <br>
+
+        <div class="actions">
+          <%= form.submit 'Create account', class: 'btn btn-primary btn-lg' %>
+        </div>
+        <br>
+        <% end %>
+
+        <br>
+        <%= link_to 'Back', login_url, class: 'btn btn-secondary btn-lg' %>
+        <br><br><br>
+      </div>
+
+  </div>
+</div>

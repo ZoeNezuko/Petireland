@@ -1,0 +1,157 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+      <h1 class="my-4">Category</h1>
+      <div class="list-group">
+        <%= link_to 'Dog Food', shop_dog_dog_food_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Toys', shop_dog_dog_toys_url, class: 'list-group-item' %>
+        <%= link_to 'Dog Beds', shop_dog_dog_beds_url, class: 'list-group-item' %>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <%= image_tag 'dog-food-banner_2.jpg', class: 'img' %>
+          </div>
+        </div>
+      </div>
+
+      <h4>BEST SELLING PRODUCTS IN THIS CATEGORY</h4>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('james-wellbeloved-large-breed-duck-rice-15kg.jpg', class: "img"), controller: 'products', action: 'show', id: 1 %>
+            <div class="card-body">
+              <p class="card-text">James Wellbeloved Large Breed Duck & Rice 15kg</p>
+              <h5>$80.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('james-wellbeloved-large-breed-turkey-rice-15kg.jpg', class: "img"), controller: 'products', action: 'show', id: 2 %>
+            <div class="card-body">
+              <p class="card-text">James Wellbeloved Large Breed Turkey & Rice 15kg</p>
+              <h5>$80.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('go_native_chicken.png', class: "img"), controller: 'products', action: 'show', id: 5 %>
+            <div class="card-body">
+              <p class="card-text">Red Mills - Go Native - Chicken</p>
+              <h5>$8.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-medium-adult-7.jpg', class: "img"), controller: 'products', action: 'show', id: 3 %>
+            <div class="card-body">
+              <p class="card-text">Royal Canin Medium Adult 7+</p>
+              <h5>$30.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-maxi-adult-5.jpg', class: "img"), controller: 'products', action: 'show', id: 4 %>
+            <div class="card-body">
+              <p class="card-text">Royal Canin Maxi Adult 5+</p>
+              <h5>$30.95</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('go-native-duck.png', class: "img"), controller: 'products', action: 'show', id: 6 %>
+            <div class="card-body">
+              <p class="card-text">Red Mills - Go Native - Duck</p>
+              <h5>$9.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-cavalier-king-charles-adult_2.jpg', class: "img"), controller: 'products', action: 'show', id: 8 %>
+            <div class="card-body">
+              <p class="card-text">James Wellbeloved Large Breed Turkey & Rice 15kg</p>
+              <h5>$16.25</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('royal-canin-chihuahua-adult_2.jpg', class: "img"), controller: 'products', action: 'show', id: 9 %>
+            <div class="card-body">
+              <p class="card-text">James Wellbeloved Large Breed Turkey & Rice 15kg</p>
+              <h5>$16.25</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <%= link_to image_tag('go-native-herring.png', class: "img"), controller: 'products', action: 'show', id: 7 %>
+            <div class="card-body">
+              <p class="card-text">Red Mills - Go Native - Herring</p>
+              <h5>$10.00</h5>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
