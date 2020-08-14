@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Petlreland
 create by ruby on rails
 
